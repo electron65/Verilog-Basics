@@ -16,7 +16,5 @@ begin
 
 		#20 A = i;
 end
-
-//assign #20 A = ~A;
-
+	
 endmodule
