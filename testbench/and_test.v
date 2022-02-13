@@ -6,8 +6,10 @@ reg [3:0] A;
 wire X;
 integer i;
 
-//and_bit and_test (X, A);
-and_bit and_test (.x(X), .a(A));
+//and_bit and_test (A, X);
+//and_bit and_test (.a(A), .x(X));
+//and_if and_test (.a(A), .x(X));
+and_prim and_test (.x(X), .a(A));
 
 initial 
 begin
