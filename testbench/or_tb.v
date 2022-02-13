@@ -6,8 +6,11 @@ reg [3:0] A;
 wire X;
 integer i;
 
-or_bit U0 (.x(X),.a(A));
-//or_bit U0 (X,A);
+//or_bit or_test (.x(X),.a(A));
+
+//or_bit or_test (A,X);
+//or_prim or_test (A,X);
+or_if or_test (A,X);
 
 initial 
 begin	
